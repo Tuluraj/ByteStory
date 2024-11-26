@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    }
+    a {
+    text-decoration: none;
+    color: #007bff;
+    }
+    /* Header and Footer Styles */
+    header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    }
+    .header-content,
+    .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    }
+    nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    }
+    nav a {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    }
+    nav a:hover {
+    color: #007bff;
+    }
+    footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    }
+    .footer-content p {
+    margin: 0;
+    }
+    /* Main Content Styles */
+    .hero {
+    background-image: url('/assets/friend_about.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+    }
+    .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    }
+    .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    }
+    .about-section {
+    padding: 60px 20px;
+    }
+    .container {
+    max-width: 800px;
+    margin: 0 auto;
+    }
+    h1, h2, h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+    }
+    p {
+    margin-bottom: 1.5em;
+    }
+    .highlight {
+    font-weight: bold;
+    color: #007bff;
+    }
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+    .header-content,
+    .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    }
+    .hero {
+        padding: 80px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-section {
+        padding: 40px 20px;
+    }
+    
+    .container {
+        max-width: 90%;
+    }
+    }    

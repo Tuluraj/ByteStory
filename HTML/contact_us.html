@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-9597205116240051">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/assets/favicon_io/favicon.ico" type="image/x-icon">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9597205116240051"
+     crossorigin="anonymous"></script>
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        /* Contact Section Styles */
+        .contact-section {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info div {
+            flex: 0 0 48%;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info p {
+            margin: 0;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Get in Touch</h1>
+        <p>We're here to help. Contact us today!</p>
+    </header>
+
+    <section class="contact-section">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Address</h3>
+                <p>04, VHR Boys Hostel <br>
+                    Jyoti Vihar, Burla <br>
+                    Sambalpur, 768019
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+91 6370266785</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:bytestory@out.com">bytestory@out.com</a></p>
+            </div>
+            <div>
+                <i class="fa-solid fa-briefcase"></i>
+                <h3>Working Hours</h3>
+                <p>Monday - Friday, 9AM - 5PM</p>
+            </div>
+        </div>
+        <i class="fa-solid fa-paper-plane"></i>
+        <h2>Send Us a Message</h2>
+        <form class="contact-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="msg" style="display: none;"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ByteStory. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

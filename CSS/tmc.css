@@ -1,0 +1,138 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 70%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  
+  ul {
+    list-style: disc;
+    margin-left: 30px;
+    margin-bottom: 25px;
+  }
+  
+  ol {
+    list-style: decimal;
+    margin-left: 30px;
+    margin-bottom: 25px;
+  }
+  
+  li {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  a:hover {
+    color: #23527c;
+  }
+  
+  a:active,
+  a:focus {
+    outline: none;
+    color: #23527c;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .container {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      margin: 10px auto;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    h2 {
+      font-size: 16px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Additional Styles */
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 30px 0;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    margin-top: 0;
+  }
+  
+  /* Link Buttons */
+  
+  .link-button {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .link-button:hover {
+    background-color: #23527c;
+  }

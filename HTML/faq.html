@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-9597205116240051">
+    <title>Frequently Asked Questions (FAQ)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/tmc.css">
+    <link rel="shortcut icon" href="/assets/favicon_io/favicon.ico" type="image/x-icon">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9597205116240051"
+     crossorigin="anonymous"></script>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .faq-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .faq-question h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .faq-question i {
+            font-size: 16px;
+            color: #666;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            margin-top: 10px;
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                font-size: 18px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            .faq-question h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions (FAQ)</h1>
+        <div class="faq-section">
+            <section>
+                <h2>General Questions</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is ByteStory?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>ByteStory is a blogging site that provides information about a wide range of topics with thorough research.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I contact ByteStory?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can contact us through email at <a href="mailto:tjsahu7248@gmail.com">tjsahu7248@gmail.com</a> or phone at 6370266785.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Account and Login</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I create an account?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To create an account, click on the "Register" button on the top right corner of the website and follow the registration process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>I forgot my password. What do I do?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Click on the "Forgot Password" link on the login page and follow the password recovery process.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Technical Issues</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>I'm experiencing technical issues with the website. What do I do?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Try clearing your browser cache and cookies. If the issue persists, contact our support team at <a href="mailto:tjsahu7248@gmail.com">tjsahu7248@gmail.com</a>.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Security and Privacy</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my personal information secure?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we take security and privacy seriously. We use encryption, firewalls, and other measures to protect your personal information.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <p>If you have any further questions, please don't hesitate to <a href="about.html">contact us</a>.</p>
+    </div>
+
+    <script>
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+                const answer = question.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    question.querySelector('i').classList.remove('fa-chevron-up');
+                    question.querySelector('i').classList.add('fa-chevron-down');
+                } else {
+                    answer.style.display = 'block';
+                    question.querySelector('i').classList.remove('fa-chevron-down');
+                    question.querySelector('i').classList.add('fa-chevron-up');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
