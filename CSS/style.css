@@ -408,6 +408,15 @@ nav a:hover {
   font-size: 0.9rem;
   margin-bottom: 10px;
 }
+.footer a {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover {
+  color: #bbb;
+}
 
 .footer ul {
   list-style: none;
